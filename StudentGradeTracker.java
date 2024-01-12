@@ -48,9 +48,7 @@ public class StudentGradeTracker {
     }
 
     private static int findHighest(ArrayList<ArrayList<Integer>> grades, int subjectIndex) {
-        int highest = Integer.MIN_VALUE;
-        for (ArrayList<Integer> studentGrades : grades) {
-            highest = Math.max(highest, studentGrades.get(subjectIndex));
+        int highest = Integer.MIN_VALUE;            highest = Math.max(highest, studentGrades.get(subjectIndex));
         }
         return highest;
     }
